@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lista de computadoras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">Lista de computadoras</h1>
+      <table class="table mt-4" id="computadoras">
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>RAM</th>
+            <th>Procesador</th>
+            <th>Almacenamiento</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <br />
+      <form>
+        <h2>Agregar computadora</h2>
+        <div class="mb-3">
+          <label for="marca" class="form-label">Marca:</label>
+          <input type="text" class="form-control" id="marca" name="marca" />
+        </div>
+        <div class="mb-3">
+          <label for="modelo" class="form-label">Modelo:</label>
+          <input type="text" class="form-control" id="modelo" name="modelo" />
+        </div>
+        <div class="mb-3">
+          <label for="ram" class="form-label">RAM (GB):</label>
+          <input type="number" class="form-control" id="ram" name="ram" />
+        </div>
+        <div class="mb-3">
+          <label for="procesador" class="form-label">Procesador:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="procesador"
+            name="procesador"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="almacenamiento" class="form-label"
+            >Almacenamiento (GB):</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="almacenamiento"
+            name="almacenamiento"
+          />
+        </div>
+        <button id="btn-submit" type="submit" class="btn btn-primary">
+          Agregar
+        </button>
+      </form>
+    </div>
+    <script src="./js/computadora.js"></script>
+  </body>
+</html>
